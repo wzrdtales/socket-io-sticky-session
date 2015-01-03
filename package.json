@@ -1,6 +1,6 @@
 {
-  "name": "sticky-session",
-  "description": "Sticky session balancer based on a `cluster` module",
+  "name": "socketio-sticky-session",
+  "description": "Sticky session balancer with layer 4 capabilities, based on a `cluster` module",
   "version": "0.2.0",
   "author": "Fedor Indutny <fedor.indutny@gmail.com>",
   "main": "./lib/sticky-session",
