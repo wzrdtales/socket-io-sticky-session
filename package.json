@@ -11,5 +11,32 @@
     "node": ">= 0.6.0"
   },
   "devDependencies": {},
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wzrdtales/socket-io-sticky-session.git"
+  },
+  "keywords": [
+    "socket",
+    "socketio",
+    "socket.io",
+    "io",
+    "hash",
+    "ip",
+    "sticky",
+    "session",
+    "balanced",
+    "load"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wzrdtales/socket-io-sticky-session/issues"
+  },
+  "homepage": "https://github.com/wzrdtales/socket-io-sticky-session"
 }
