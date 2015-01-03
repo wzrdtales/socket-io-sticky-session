@@ -29,7 +29,7 @@ as it may change until the stable release several times.
 ## Installation
 
 ```bash
-npm install sticky-session
+npm install socketio-sticky-session
 ```
 
 ## Configuration
@@ -81,7 +81,7 @@ Specifies on which event sticky-sessions should **listen** if **isSyncable** is 
 ### Without proxied connections
 
 ```javascript
-var sticky = require('sticky-session');
+var sticky = require('socketio-sticky-session');
 
 sticky(require('http').createServer(function(req, res) {
   res.end('worker: ' + process.env.NODE_WORKER_ID);
@@ -92,7 +92,7 @@ sticky(require('http').createServer(function(req, res) {
 Simple
 
 ```javascript
-var sticky = require('sticky-session');
+var sticky = require('socketio-sticky-session');
 
 sticky(function() {
   // This code will be executed only in slave workers
@@ -116,7 +116,7 @@ Socket.io
 
 
 ```javascript
-var sticky = require('sticky-session');
+var sticky = require('socketio-sticky-session');
 
 var options = {
   proxy: true, //activate layer 4 patching
@@ -143,7 +143,7 @@ sticky(options, function() {
 Socket.io
 
 ```javascript
-var sticky = require('sticky-session');
+var sticky = require('socketio-sticky-session');
 
 var options = {
   proxy: true, //activate layer 4 patching
