@@ -24,7 +24,7 @@ The reason for this is that the behavior of onread in net.js has changed:
 https://github.com/joyent/node/blob/v0.11.14-release/lib/net.js#L492-L514
 
 Versions greater than 0.11.14 will be supported as soon as 0.11.x gets stable, 
-as it may change until the stable release several times. 
+as it may change several times until the stable release. But if someone pushs a pull request supporting this I won't deny it.
 
 ## Installation
 
