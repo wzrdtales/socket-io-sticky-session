@@ -23,7 +23,7 @@ worked only on layer 3 of the OSI Model. But the Information we need, is right n
 The reason for this is that the behavior of onread in net.js has changed:
 https://github.com/joyent/node/blob/v0.11.14-release/lib/net.js#L492-L514
 
-Versions greater than 0.11.14 will be supported as soon as 0.11.x gets stable, 
+Versions greater than 0.11.14 will be supported as soon as 0.11.x gets stable,
 as it may change several times until the stable release. But if someone pushs a pull request supporting this I won't deny it.
 
 ## Installation
@@ -41,6 +41,7 @@ var options = {
     num: integer,
     proxy: boolean,
     header: string,
+    ignoreMissingHeader: boolean,
     sync: {
       isSyncable: boolean,
       event: string
@@ -59,6 +60,10 @@ Specifies if the layer 4 patching should be used or not, **needed if behind a pr
 ### header
 
 Specifies the header containing the **real user IP** and is omittable. If omitted the header defaults to x-forwarded-for. Also the header is **case-insenstive**.
+
+### ignoreMissingHeader
+
+True will proxy even if the header is missing in a request. Needed for compatibility with some reverse proxies.
 
 ### sync
 
