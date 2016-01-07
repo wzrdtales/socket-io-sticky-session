@@ -5,7 +5,8 @@ var http = require('http');
 // var io = require('socket.io');
 
 var options = {
-  proxy: false, //activate layer 4 patching
+  proxy: true, //activate layer 4 patching
+  ignoreMissingHeader: true,
   // header: 'x-forwarded-for', //provide here your header containing the users ip
   // num: 2, //count of processes to create, defaults to maximum if omitted
   // sync: {
