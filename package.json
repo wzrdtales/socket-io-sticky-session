@@ -9,7 +9,9 @@
     "node": ">= 0.6.0"
   },
   "devDependencies": {
-    "longjohn": "^0.2.11"
+    "longjohn": "^0.2.11",
+    "socket.io": "^1.4.3",
+    "socket.io-client": "^1.4.3"
   },
   "optionalDependencies": {},
   "directories": {
