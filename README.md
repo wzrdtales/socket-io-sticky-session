@@ -5,7 +5,7 @@ A simple performant way to use [socket.io](http://socket.io/) with a
 
 ## Technical
 
-Sticky Sessions are Hash Balanced by IP. Optionally layer4 header informations, for proxied connections, can be hashed.
+Sticky sessions are hash balanced by IP. Optionally, layer4 header information (HTTP) for reverse-proxied connections can be hashed.
 
 ### Prolog to Proxied connections
 
@@ -17,7 +17,7 @@ before they reach the node Application.
 #### The Problem:
 
 If we proxy any connection, the real IP will be lost. The original implementation of sticky-sessions
-worked only on layer 3 of the OSI Model. But the Information we need, is right now on layer 4.
+worked only on layer 3 of the OSI Model. But the information we need, is right now on layer 4.
 
 **Note:** Only versions smaller than 0.11.14 and greater than 0.9.6 are supported.
 The reason for this is that the behavior of onread in net.js has changed:
